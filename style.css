@@ -106,12 +106,97 @@ Page Styles
     padding: var(--space-2);
   }
 
-  /*--------------------------------
+/* --------------------------------
   Headings Letter Spacing
--------------------------------- */ 
+-------------------------------- */
  
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--headings-family);
     letter-spacing: var(--headings-letter-spacing);
   }  
+
+/* --------------------------------
+  Landmark Page Layout
+-------------------------------- */
+.directions-links{
+  list-style: none;
+  display: flex;
+  flex: wrap;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  margin:0;
+}
+
+.directions-link{
+  display: flex;
+  padding: var(--space-3);
+  background-color: #A9D9D4;
+  color: #000000;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+
+.directions-link:hover{
+  background-color: #72D5CB;
+  color: #000000;
+}
+
+/* -----------------------------------------------
+page area styling
+------------------------------------------------ */
+.about, .images-grid, .intro{
+  margin: var(--space-8)0;
+}
+
+#pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+  @media (min-width: 600px){
+      /* this applies to mobile in landscape and some tablets in portrait */
+.images-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}/*   end min-width 600 */
+
+  
+
+@media (min-width: 900px){
+      /* this applies to tablets */
+      .featured-landmark-descrip{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-6)
+      }
+  .intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+  .about{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-8);
+  }
+  .images-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}/*   end min-width 900 */
+
+
+@media (min-width: 1200px){
+      /* this applies average laptops */
+
+}/*   end min-width 1200 */
+
+  
+@media (min-width: 1800px){
+      /* this applies to very large screens */
+
+}/*   end min-width 1800 */

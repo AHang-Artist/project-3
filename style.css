@@ -101,11 +101,15 @@ Page Styles
   font-size:.8rem;
   margin:0;}
 
-  .landmark h3 {
+  .landmark h3 a {
     text-align: center;
     padding: var(--space-2);
+    color: var(--alternate-action);
   }
 
+  .landmark h3 a:hover {
+    color: var(--alternate-action-hover);
+  }
 /* --------------------------------
   Headings Letter Spacing
 -------------------------------- */
@@ -146,7 +150,7 @@ Page Styles
 page area styling
 ------------------------------------------------ */
 .about, .images-grid, .intro{
-  margin: var(--space-8)0;
+  margin: var(--space-2) 0;
 }
 
 #pagination{
@@ -170,17 +174,17 @@ page area styling
       .featured-landmark-descrip{
         display: flex;
         grid-template-columns: 1fr 1fr;
-        gap: var(--space-6)
+        gap: var(--space-4);
       }
   .intro{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-8);
+    gap: var(--space-4);
   }
   .about{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: var(--space-8);
+    gap: var(--space--4);
   }
   .images-grid{
     display: grid;

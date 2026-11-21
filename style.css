@@ -251,9 +251,17 @@ header {
   /* You will need to add the font styling (size, color etc) here */
 }
 
-.logo:hover {
+/* .logo:hover {
   color: var(--alternate-text);
   text-decoration:underline;
+} */
+
+.logo:hover,
+.logo:focus-visible {
+  background: var(--clr-nav-hover-bg);
+  color: var(--clr-nav-hover);
+  text-decoration:underline;
+  outline: none;
 }
 
 /* Hamburger button */

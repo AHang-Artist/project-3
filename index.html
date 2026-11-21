@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="site-title">NYC Landmarks</div>
         <nav aria-label="Primary">
             <a href="index.html">Home</a>
@@ -21,6 +21,25 @@
             <a href="landmark-yankee.html">Yankee Stadium</a>
             <a href="landmark-tram.html">Roosevelt Island Tramway</a>
         </nav>
+    </header> -->
+     <header>
+        <div class="topbar">
+            <div class="site-title"><a href="/" class="logo">NYC Landmarks</a></div>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <nav aria-label="Primary">
+            <ul id="menu" class="menu">
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-wonder.html">Wonder Wheel</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -29,11 +48,7 @@
             <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
             <p>New York City is filled with landmarks, tourist attractions and historic sites dating from before it was
                 known as New York City to more recent additions. Click through this site to explore!</p>
-            <div class="videoWrapper ratio-16-9"><iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/_xkg7pNSp9M?si=VOuWCrNcSfBIRFqW" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="videoWrapper ratio-16-9"><iframe width="560" height="315" src="https://www.youtube.com/embed/8jrtg1jNnNs?si=e9CoRFQygciYctGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         </section>
 
         <section class="featured-landmark">
@@ -135,6 +150,8 @@
     <footer>
         <p>Site by _Ashley Hang_</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

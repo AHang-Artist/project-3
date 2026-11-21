@@ -11,15 +11,22 @@
 
 <body id="page">
     <header>
-        <div class="site-title">NYC Landmarks</div>
+        <div class="topbar">
+            <div class="site-title"><a href="/" class="logo">NYC Landmarks</a></div>
+            <button type="button" class="menu-button" aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
         <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="landmark-liberty.html">Statue of Liberty</a>
-            <a href="landmark-empire.html">Empire State Building</a>
-            <a href="landmark-ferry.html">Staten Island Ferry</a>
-            <a href="landmark-wonder.html">Wonder Wheel</a>
-            <a href="landmark-yankee.html">Yankee Stadium</a>
-            <a href="landmark-tram.html">Roosevelt Island Tramway</a>
+            <ul id="menu" class="menu">
+                <li><a href="landmark-liberty.html">Statue of Liberty</a></li>
+                <li><a href="landmark-empire.html">Empire State Building</a></li>
+                <li><a href="landmark-ferry.html">Staten Island Ferry</a></li>
+                <li><a href="landmark-yankee.html">Yankee Stadium</a></li>
+                <li><a href="landmark-tram.html">Roosevelt Island Tram</a></li>
+                <li><a href="landmark-wonder.html" aria-current="page">Wonder Wheel</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -99,6 +106,8 @@
     <footer>
         <p>Site by _Ashley Hang_</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
